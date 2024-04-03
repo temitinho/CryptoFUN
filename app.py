@@ -29,6 +29,7 @@ def main():
     # Create a form
     with st.form("text_converter_form"):
         crypto_delta = st.selectbox("Select Encryption delta", list(range(1, 27)))
+        st.write("Enter your text to encrypt:")
         text = st.text_area(
         "",
         )
